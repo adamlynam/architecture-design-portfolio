@@ -3,7 +3,7 @@ layout: layouts/works/gallery.njk
 tags: project
 timeline: 2019-2020
 title: I did some draws
-cover: ./src/img/sdkx/cover.png
+cover: ./src/img/cover.png
 date: 2022-11-24
 summary: I did some draws and they were very good.
 
