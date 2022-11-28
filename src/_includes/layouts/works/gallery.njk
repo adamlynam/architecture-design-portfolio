@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="h-100" lang="{{ metadata.language }}">
+  <head>
+    {% include 'snippets/head.njk' %}
+  </head>
+  <body>
+    {% include 'snippets/navbar.njk' %}
+    <main class="container">
+      <div class="row d-flex">
+        <article>
+          {% myResponsiveImage "" + cover,
+          "ss" %}</div>
+        <h1 class="pt-3">{{ title }}</h1>
+        {{ content | safe }}
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 py-5">
+            <div class="gallery-slider">
+              {%- for filename in images -%}
+                <img src="{{ filename }}"/>
+              {%- endfor -%}
+            </div>
+            <div class="gallery-navigation">
+              {%- for filename in images -%}
+                <img src="{{ filename }}"/>
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 py-5">
+            <model-viewer
+              alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
+              src="http://localhost:8000/model/house/2399db49730241cfa356a5e1ae92dc0c.gltf"
+              ar
+              shadow-intensity="1"
+              style="width: 100%; height: 500px;"
+              camera-controls
+              touch-action="pan-y"></model-viewer>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+</html></div></div></main><footer class="container">{% include 'snippets/footer.njk' %}</footer></body></html>
