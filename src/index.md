@@ -1,7 +1,7 @@
 ---
 layout: layouts/index.njk
 title: Architectural Design Portfolio
-subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+subtitle: I design and draft delightful spaces that people love. 
 linkedin_url: https://www.linkedin.com/in/jess-beale/
 contact_text: Get in touch via LinkedIn
 pagination:
