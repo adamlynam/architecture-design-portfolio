@@ -2,9 +2,6 @@
 layout: layouts/about.njk
 title: A technical drafter
 
-link1: Learning Management Software Consultant @ Catalyst IT
-link1_url: https://www.catalyst.net.nz/
-
 email: jesslbeale[at]gmail[dot]com
 ---
 
