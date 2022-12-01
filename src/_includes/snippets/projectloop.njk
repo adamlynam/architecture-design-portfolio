@@ -1,24 +1,11 @@
 <div class="row d-flex justify-content-center">
-  <div class="">
+  <div class="project-list">
     {%- for project in projects %}
-      <div  class="py-5">
-
-        <a href="{{ project.url | url }}" >{% myResponsiveImage "" + project.data.cover,
-          "ss" %}
+      <div class="project">
+        <a class="text-decoration-none text-dark" href="{{ project.url | url }}">
+          {% myResponsiveImage "" + project.data.cover, "ss" %}
+          <p class="fs-2 mb-0">{{ project.data.title }}</p>
         </a>
-
-        <div class="col-12 px-3 py-3" style="background-image: url('./img/bg_cover.png');background-size: cover;">
-          <a href="{{ project.url | url }}" class="text-decoration-none text-dark">
-            <p class="fs-2 mb-0">{{ project.data.title}}</p>
-          </a>
-          <p class="text-muted">{{ project.data.subtitle }}</p>
-          {% for tag in project.data.related %}
-            <a class="btn text-muted btn-light btn-sm me-2">
-              {{tag}}
-            </a>
-          {% endfor %}
-        </div>
-
       </div>
     {% endfor %}
   </div>

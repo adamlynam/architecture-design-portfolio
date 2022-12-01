@@ -116,3 +116,34 @@ body {
     font-size: 5rem;
   }
 }
+
+.project-list {
+  .project {
+    position: relative;
+
+    img {
+      opacity: 0.2;
+    }
+
+    p {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      padding: 1em;
+    }
+  }
+
+  .project:hover {
+    img {
+      opacity: 1;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
+  .project:nth-child(odd) {
+    text-align: right;
+  }
+}

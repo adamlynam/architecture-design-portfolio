@@ -2,7 +2,7 @@
 layout: layouts/works/gallery.njk
 tags: project
 title: Commercial Building Plans - November 2022, Revit
-cover: ./src/img/gough-street/Gough_Street_A100.png
+cover: ./src/img/gough-street/Gough_Street_Cover.png
 date: 2022-11-01
 
 images:

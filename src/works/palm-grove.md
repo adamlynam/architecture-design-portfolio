@@ -2,7 +2,7 @@
 layout: layouts/works/gallery.njk
 tags: project
 title: Berhampore Townhouse - May 2022, Revit
-cover: ./src/img/palm-grove/Palm_Grove_A000.png
+cover: ./src/img/palm-grove/Palm_Grove_Cover.png
 date: 2022-05-01
 
 images:
