@@ -26,18 +26,17 @@ module.exports = function (eleventyConfig) {
       // Iterate over formats and widths
       return `<picture>
       ${Object.values(stats)
-        .map((imageFormat) => {
-          return `  <source type="image/${
-            imageFormat[0].format
-          }" srcset="${imageFormat
-            .map((entry) => `${entry.url} ${entry.width}w`)
-            .join(", ")}" sizes="${sizes}">`;
-        })
-        .join("\n")}
+          .map((imageFormat) => {
+            return `  <source type="image/${imageFormat[0].format
+              }" srcset="${imageFormat
+                .map((entry) => `${entry.url} ${entry.width}w`)
+                .join(", ")}" sizes="${sizes}">`;
+          })
+          .join("\n")}
         <img
           src="${lowestSrc.url}"
           width="${lowestSrc.width}"
-          style="height:30vh; object-fit:cover;overflow: hidden;"
+          style="height:30vh; object-fit:cover; object-position:top;overflow: hidden;"
           class="w-100"
           loading="lazy"
           decoding="async"
@@ -66,14 +65,13 @@ module.exports = function (eleventyConfig) {
       // Iterate over formats and widths
       return `<picture>
       ${Object.values(stats)
-        .map((imageFormat) => {
-          return `  <source type="image/${
-            imageFormat[0].format
-          }" srcset="${imageFormat
-            .map((entry) => `${entry.url} ${entry.width}w`)
-            .join(", ")}" sizes="${sizes}">`;
-        })
-        .join("\n")}
+          .map((imageFormat) => {
+            return `  <source type="image/${imageFormat[0].format
+              }" srcset="${imageFormat
+                .map((entry) => `${entry.url} ${entry.width}w`)
+                .join(", ")}" sizes="${sizes}">`;
+          })
+          .join("\n")}
         <img
           src="${lowestSrc.url}"
           width="${lowestSrc.width}"
@@ -104,14 +102,13 @@ module.exports = function (eleventyConfig) {
       // Iterate over formats and widths
       return `<picture>
       ${Object.values(stats)
-        .map((imageFormat) => {
-          return `  <source type="image/${
-            imageFormat[0].format
-          }" srcset="${imageFormat
-            .map((entry) => `${entry.url} ${entry.width}w`)
-            .join(", ")}" sizes="${sizes}">`;
-        })
-        .join("\n")}
+          .map((imageFormat) => {
+            return `  <source type="image/${imageFormat[0].format
+              }" srcset="${imageFormat
+                .map((entry) => `${entry.url} ${entry.width}w`)
+                .join(", ")}" sizes="${sizes}">`;
+          })
+          .join("\n")}
         <img
           src="${lowestSrc.url}"
           width="100%"

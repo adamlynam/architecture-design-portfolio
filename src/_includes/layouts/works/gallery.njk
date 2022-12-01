@@ -6,39 +6,29 @@
   <body>
     {% include 'snippets/navbar.njk' %}
     <main class="container">
+      <h1 class="pt-3">{{ title }}</h1>
+      {{ content | safe }}
       <div class="row d-flex">
-        <article>
-          {% myResponsiveImage "" + cover,
-          "ss" %}</div>
-        <h1 class="pt-3">{{ title }}</h1>
-        {{ content | safe }}
         <div class="row justify-content-center">
-          <div class="col-12 col-lg-8 py-5">
-            <div class="gallery-slider">
+          <div class="col-12 col-lg-11 py-4">
+            <div id="mainCarousel" class="carousel w-10/12 max-w-5xl mx-auto">
               {%- for filename in images -%}
-                <img src="{{ filename }}"/>
+                <div class="carousel__slide" data-src="{{ filename }}" data-fancybox="gallery">
+                  <img src="{{ filename }}"/>
+                </div>
               {%- endfor -%}
             </div>
-            <div class="gallery-navigation">
+            <div id="thumbCarousel" class="carousel max-w-xl mx-auto">
               {%- for filename in images -%}
-                <img src="{{ filename }}"/>
+                <div class="carousel__slide">
+                  <img class="panzoom__content" src="{{ filename }}"/>
+                </div>
               {%- endfor -%}
             </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-8 py-5">
-            <model-viewer
-              alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-              src="/model/house/2399db49730241cfa356a5e1ae92dc0c.gltf"
-              ar
-              shadow-intensity="1"
-              style="width: 100%; height: 500px;"
-              camera-controls
-              touch-action="pan-y"></model-viewer>
           </div>
         </div>
       </div>
     </article>
+    <footer class="container">{% include 'snippets/footer.njk' %}</footer>
   </body>
-</html></div></div></main><footer class="container">{% include 'snippets/footer.njk' %}</footer></body></html>
+</html>

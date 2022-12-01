@@ -19,13 +19,16 @@
           </a>
         </div>
       </div>
+    </main>
+    <div class="container py-vh-4 mt-5 pt-0">
+      <div class="row d-flex justify-content-center">
+        <div class="col-10">
+          <p class="fs-2 mb-0 pb-0 text-center text-muted">Projects</p>
+          {% include 'snippets/projectloop.njk' %}
+        </div>
+      </div>
     </div>
+    <footer class="container">
+      {% include 'snippets/footer.njk' %}</footer>
   </body>
-</html></main><div class="container py-vh-4 mt-5 pt-0">
-<div class="row d-flex justify-content-center">
-  <div class="col-10">
-    <p class="fs-2 mb-0 pb-0 text-center text-muted">Projects</p>
-    {% include 'snippets/projectloop.njk' %}
-  </div>
-</div></div><footer class="container">
-{% include 'snippets/footer.njk' %}</footer></body></html>
+</html>

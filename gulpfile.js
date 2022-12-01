@@ -17,7 +17,7 @@ var paths = cfg.paths;
 gulp.task('dist-assets', function (done) {
   gulp.src('./src/js/**.*')
     .pipe(gulp.dest('./dev/js'));
-  gulp.src('./src/img/**.*')
+  gulp.src('./src/img/**')
     .pipe(gulp.dest('./dev/img'));
   gulp.src('./src/model/**')
     .pipe(gulp.dest('./dev/model'));
