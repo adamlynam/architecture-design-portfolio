@@ -2,6 +2,7 @@
 layout: layouts/about.njk
 title: A technical drafter
 
+cv_document_url: /pdf/Jess_Beale_CV.pdf
 email: jesslbeale[at]gmail[dot]com
 ---
 
